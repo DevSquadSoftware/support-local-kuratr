@@ -11,6 +11,23 @@
   }
 }
 
+.position-sticky {
+  background-color: white;
+  top: 50px;
+  z-index: 10;
+  box-shadow: 5px 10px 10px white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.card.card-ecommerce .card-footer{
+  padding: 5px 0;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
 html {
   height: 100vh;
 }

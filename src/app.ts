@@ -65,11 +65,22 @@ export class App {
     {
       type: "restaurant",
       imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/27657033_184666782289487_6734517347018094530_n.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=Aq5LoVdTaCMAX_7f7ZU&_nc_ht=scontent-ort2-1.xx&oh=7763b5c219839fb3dc1883d1bb9c3f89&oe=5E9E871E",
-      facebook: "villagecornerdeli",
+      facebook: "Panda-garden-184666485622850",
       name: "Panda Garden",
       url: "http://www.pandagardenia.com",
-      expectedOpenDate: null,
+      expectedOpenDate: new Date('4/8/2020'),
       phone: 5634493888,
+      description: "Please support your local salon and book an appointment or buy a gift card.",
+      instagram: '',
+    },
+    {
+      type: "restaurant",
+      imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/18056731_1494552773910138_3461039912820690488_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=hke7Fk3k_pgAX-YvyAC&_nc_ht=scontent-ort2-1.xx&oh=1bc693cfb78398735d22f0488b80daf9&oe=5E9FE99F",
+      facebook: "villagecornerdeli",
+      name: "The Village Corner Deli",
+      url: "http://villagecornerdeli.net/",
+      expectedOpenDate: null,
+      phone: 5633232333,
       description: "Please support your local salon and book an appointment or buy a gift card.",
       instagram: '',
     }
@@ -91,9 +102,9 @@ export class App {
     return this.companies.filter(z =>
       (this.searchText === '' || z.description?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) || z.name?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase())) &&
       ((this.salonChecked && z.type === "salon") ||
-      (this.restaurantChecked && z.type === "restaurant") ||
-      (this.retailChecked && z.type === "retail") ||
-      (this.coffeeChecked && z.type === "coffee")));
+        (this.restaurantChecked && z.type === "restaurant") ||
+        (this.retailChecked && z.type === "retail") ||
+        (this.coffeeChecked && z.type === "coffee")));
   }
 
 }
