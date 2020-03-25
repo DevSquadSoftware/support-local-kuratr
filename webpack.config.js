@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 const cssLoader = "css-loader";
 
@@ -71,7 +72,11 @@ module.exports = function(env) {
       ]
     },
     plugins: [
-      new HtmlWebpackPlugin({ template: "index.ejs", favicon: "favicon.ico" })
+      new HtmlWebpackPlugin({ template: "index.ejs", favicon: "favicon.ico" }),
+      new CopyPlugin([
+        { from: "*.png", to: "./" },
+        { from: "*.webmanifest", to: "./" }
+      ])
     ]
   };
 };

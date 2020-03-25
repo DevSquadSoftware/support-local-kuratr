@@ -36,7 +36,8 @@
     "autoprefixer": "^9.0.0",
     "@types/node": "^13.0.0",
     "typescript": "^3.0.0",
-    "tslint": "^6.0.0"
+    "tslint": "^6.0.0",
+    "copy-webpack-plugin": "^5.1.1"
   },
   "scripts": {
     "lint:css": "sass-lint -c .sass-lint.yml \"src/**/*.scss\"",

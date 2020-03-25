@@ -19,16 +19,26 @@
       <div class="md-form w-100 mb-3">
         <input
           class="form-control"
-          value.bind="searchText & debounce:500"
+          value.bind="state.searchText & debounce:500"
           type="text"
           placeholder="Search"
           aria-label="Search"
         />
+        <div class="form-check form-check-inline">
+          <input
+            checked.bind="state.isOpenOnly"
+            type="checkbox"
+            class="form-check-input"
+            id="isOpen"
+          />
+          <label class="form-check-label" for="isOpen">Open</label>
+        </div>
       </div>
+
       <div class="mx-auto">
         <div class="form-check form-check-inline">
           <input
-            checked.bind="salonChecked"
+            checked.bind="state.salonChecked"
             type="checkbox"
             class="form-check-input"
             id="salons"
@@ -37,7 +47,7 @@
         </div>
         <div class="form-check form-check-inline">
           <input
-            checked.bind="restaurantChecked"
+            checked.bind="state.restaurantChecked"
             type="checkbox"
             class="form-check-input"
             id="restaurants"
@@ -46,7 +56,7 @@
         </div>
         <div class="form-check form-check-inline">
           <input
-            checked.bind="coffeeChecked"
+            checked.bind="state.coffeeChecked"
             type="checkbox"
             class="form-check-input"
             id="coffee"
@@ -55,7 +65,7 @@
         </div>
         <div class="form-check form-check-inline mt-2 mt-sm-none">
           <input
-            checked.bind="retailChecked"
+            checked.bind="state.retailChecked"
             type="checkbox"
             class="form-check-input"
             id="retail"
@@ -125,9 +135,7 @@
                   ${company.expectedOpenDate === undefined ? 'Open' :
                   getClosedText(company.expectedOpenDate)}
                 </p>
-                <span
-                  class="float-left mx-2"
-                >
+                <span class="float-left mx-2">
                   -
                 </span>
                 <a
@@ -168,9 +176,8 @@
       </div>
     </section>
   </div>
-<foot></foot>
+  <foot></foot>
 </main>
-
 
 <div
   if.bind="modalOpen"
