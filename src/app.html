@@ -15,16 +15,16 @@
   <div class="container" style="margin-top: 75px;">
     <header></header>
     <div class="row position-sticky">
-      <div class="col-12" <!-- Search form -->
+      <div class="col-12">
         <div class="md-form w-100 mb-3">
           <input
-            class="form-control"
+            class="form-control mb-0"
             value.bind="state.searchText & debounce:500"
             type="text"
             placeholder="Search"
             aria-label="Search"
           />
-          <div class="form-check form-check-inline">
+          <div class="form-check form-check-inline mb-3">
             <input
               checked.bind="state.isOpenOnly"
               type="checkbox"
@@ -34,8 +34,7 @@
             <label class="form-check-label" for="isOpen">Open</label>
           </div>
         </div>
-
-        <div class="mx-auto">
+        <div class="text-center">
           <div class="form-check form-check-inline">
             <input
               checked.bind="state.salonChecked"
