@@ -15,62 +15,65 @@
   <div class="container" style="margin-top: 75px;">
     <header></header>
     <div class="row position-sticky">
-      <!-- Search form -->
-      <div class="md-form w-100 mb-3">
-        <input
-          class="form-control"
-          value.bind="state.searchText & debounce:500"
-          type="text"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <div class="form-check form-check-inline">
+      <div class="col-12" <!-- Search form -->
+        <div class="md-form w-100 mb-3">
           <input
-            checked.bind="state.isOpenOnly"
-            type="checkbox"
-            class="form-check-input"
-            id="isOpen"
+            class="form-control"
+            value.bind="state.searchText & debounce:500"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
           />
-          <label class="form-check-label" for="isOpen">Open</label>
+          <div class="form-check form-check-inline">
+            <input
+              checked.bind="state.isOpenOnly"
+              type="checkbox"
+              class="form-check-input"
+              id="isOpen"
+            />
+            <label class="form-check-label" for="isOpen">Open</label>
+          </div>
         </div>
-      </div>
 
-      <div class="mx-auto">
-        <div class="form-check form-check-inline">
-          <input
-            checked.bind="state.salonChecked"
-            type="checkbox"
-            class="form-check-input"
-            id="salons"
-          />
-          <label class="form-check-label" for="salons">Salons and Spas</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            checked.bind="state.restaurantChecked"
-            type="checkbox"
-            class="form-check-input"
-            id="restaurants"
-          />
-          <label class="form-check-label" for="restaurants">Restaurants</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            checked.bind="state.coffeeChecked"
-            type="checkbox"
-            class="form-check-input"
-            id="coffee"
-          />
-          <label class="form-check-label" for="coffee">Coffee</label>
-        </div>
-        <div class="form-check form-check-inline mt-2 mt-sm-none">
-          <input
-            checked.bind="state.retailChecked"
-            type="checkbox"
-            class="form-check-input"
-            id="retail"
-          />
-          <label class="form-check-label" for="retail">Retail</label>
+        <div class="mx-auto">
+          <div class="form-check form-check-inline">
+            <input
+              checked.bind="state.salonChecked"
+              type="checkbox"
+              class="form-check-input"
+              id="salons"
+            />
+            <label class="form-check-label" for="salons">Salons and Spas</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              checked.bind="state.restaurantChecked"
+              type="checkbox"
+              class="form-check-input"
+              id="restaurants"
+            />
+            <label class="form-check-label" for="restaurants"
+              >Restaurants</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              checked.bind="state.coffeeChecked"
+              type="checkbox"
+              class="form-check-input"
+              id="coffee"
+            />
+            <label class="form-check-label" for="coffee">Coffee</label>
+          </div>
+          <div class="form-check form-check-inline mt-2 mt-sm-none">
+            <input
+              checked.bind="state.retailChecked"
+              type="checkbox"
+              class="form-check-input"
+              id="retail"
+            />
+            <label class="form-check-label" for="retail">Retail</label>
+          </div>
         </div>
       </div>
     </div>
