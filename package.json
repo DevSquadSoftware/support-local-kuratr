@@ -44,6 +44,7 @@
     "lint": "npm run lint:js && npm run lint:html && npm run lint:css",
     "start": "webpack-dev-server",
     "build": "rimraf dist && webpack --env production",
+    "install:build": "npm install && rimraf dist && webpack --env production",
     "lint:js": "tslint --project tsconfig.json"
   }
 }
