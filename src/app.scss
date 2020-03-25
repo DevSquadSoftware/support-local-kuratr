@@ -1,0 +1,33 @@
+.map-container {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+html {
+  height: 100vh;
+}
+body,
+main {
+  min-height: 100vh;
+}
+main {
+  overflow: auto;
+}
+
+.page-footer {
+  position: relative;
+  margin-top: -135px;
+  clear: both;
+}
+
+.form-check-input[type="checkbox"] + label:before {
+  margin-top: 0 !important;
+}
