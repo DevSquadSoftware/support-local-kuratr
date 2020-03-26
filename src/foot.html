@@ -3,7 +3,7 @@
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
         <a
-          href="http://facebook.com/greyandcosalon"
+          href="https://www.facebook.com/greyandcosalon"
           class="btn-floating btn-fb mx-1"
         >
           <i class="fab fa-facebook-f"> </i>
@@ -11,7 +11,7 @@
       </li>
       <li class="list-inline-item">
         <a
-          href="http://instagram.com/greyandcosalon"
+          href="https://instagram.com/greyandcosalon"
           class="btn-floating btn-ins mx-1"
           type="button"
           role="button"
@@ -20,7 +20,7 @@
       </li>
       <li class="list-inline-item">
         <a
-          href="http://twitter.com/greyandcosalon"
+          href="https://twitter.com/greyandcosalon"
           class="btn-floating btn-tw mx-1"
         >
           <i class="fab fa-twitter"> </i>
@@ -34,3 +34,16 @@
     <a href="${location.href & oneTime}"> ${location.hostname & oneTime}</a>
   </div>
 </footer>
+
+<div id="social-side">
+  <span
+    class="text-center text-primary border-top border-right border-primary p-2"
+    >Share</span
+  >
+  <a role="button" class="btn btn-fb" href="https://www.facebook.com/share.php?u=${encodeURI(location.href) & oneTime}&title=${encodeURI(title) & oneTime}">
+    <i class="fab fa-facebook-f"></i>
+  </button>
+  <a role="button" class="btn btn-tw" href="https://twitter.com/intent/tweet?status=${encodeURI(title) & oneTime} ${encodeURI(location.href) & oneTime}">
+    <i class="fab fa-twitter"></i>
+  </button>
+</div>

@@ -20,7 +20,7 @@
 
 .btn.btn-xs {
   padding: 5px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .position-sticky {
@@ -30,6 +30,29 @@
   box-shadow: 5px 10px 10px white;
   padding-bottom: 10px;
   margin-bottom: 20px;
+}
+
+#social-side {
+  position: fixed;
+  top: 50%;
+  display: block;
+  > span {
+    border-radius: 0 5px 0 0;
+  }
+  > * {
+    display: block;
+    margin: 0;
+  }
+  .btn {
+    width: 75px;
+    border-radius: 0;
+    &:first-child {
+      border-radius: 0 5px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 5px 0;
+    }
+  }
 }
 
 .card.card-ecommerce .card-footer {
