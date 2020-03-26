@@ -110,4 +110,16 @@ export const companies: Company[] = [
     phone: 5639494189,
     description: "Locally owned boutique serving local quad citians!"
   },
+  {
+    type: "restaurant",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/70083204_113047610077811_8399396077379256320_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=aIb9EOeu1U0AX_Txias&_nc_ht=scontent-ort2-1.xx&oh=9c270422ccc064110841fb9ab2236fda&oe=5EA3B2A2",
+    facebook: "California-Burrito-Bettendorf-IA-113047146744524",
+    name: "California Burrito",
+    url: "http://CaliforniaBurritosia.com/",
+    phone: 5638881982,
+    description: "It’s Burrito Time Yes we are open friends. Call ahead and we will have your food ready for pick up. We will be more than happy to deliver your food to your vehicle as well",
+    instagram: '',
+  },
+
+
 ];
