@@ -31,18 +31,6 @@ export class App implements IViewModel {
     }
   }
 
-  onScroll = (event: Event) => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      this.showButton = true;
-    } else {
-      this.showButton = false;
-    }
-  }
-
-  beforeAttach() {
-    window.onscroll = this.onScroll;
-  }
-
   afterAttach() {
     navigator.geolocation.getCurrentPosition(this.getPosition);
   }
