@@ -73,7 +73,7 @@ export const companies: Company[] = [
     name: "The Village Corner Deli",
     url: "http://villagecornerdeli.net/",
     phone: 5633232333,
-    description: "Please support your local salon and book an appointment or buy a gift card.",
+    description: "Please support your local deli and swing by or order online.",
     instagram: '',
   }
   ,
