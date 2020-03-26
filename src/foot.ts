@@ -30,10 +30,9 @@ export class Foot {
   }
 
   scrollTop() {
-    document.body.scrollIntoView({
+    document.getElementById('header').scrollIntoView({
       behavior: "smooth",
-      block: 'start',
-      inline: 'start'
     });
+
   }
 }
