@@ -40,10 +40,10 @@
     class="text-center text-primary border-top border-right border-primary p-2"
     >Share</span
   >
-  <a role="button" class="btn btn-fb" href="https://www.facebook.com/share.php?u=${encodeURI(location.href) & oneTime}&title=${encodeURI(title) & oneTime}">
+  <a role="button" class="btn btn-fb" href="https://www.facebook.com/share.php?u=${encodeURI(href) & oneTime}&title=${encodeURI(title) & oneTime}">
     <i class="fab fa-facebook-f"></i>
   </button>
-  <a role="button" class="btn btn-tw" href="https://twitter.com/intent/tweet?status=${encodeURI(title) & oneTime} ${encodeURI(location.href) & oneTime}">
+  <a role="button" class="btn btn-tw" href="https://twitter.com/intent/tweet?status=${encodeURI(title) & oneTime} ${encodeURI(href) & oneTime}">
     <i class="fab fa-twitter"></i>
   </button>
 </div>
