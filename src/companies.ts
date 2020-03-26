@@ -4,7 +4,7 @@ export const companies: Company[] = [
   {
     type: 'salon',
     giftCardUrl: "https://www.vagaro.com/us04/greyandcosalon",
-    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/p960x960/73051041_2539535322804406_497752483012018176_o.png?_nc_cat=107&_nc_sid=7aed08&_nc_ohc=oIpYqX3aPYMAX8UHqs_&_nc_ht=scontent-ort2-1.xx&oh=6dad544039946dae68052a1f9da028e0&oe=5E9F2724",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/73051041_2539535322804406_497752483012018176_o.png?_nc_cat=107&_nc_sid=174925&_nc_ohc=oIpYqX3aPYMAX8UHqs_&_nc_ht=scontent-ort2-1.xx&oh=25d115ad272a2d6e0e8d74cc9f6ccecd&oe=5EA00EF4",
     facebook: "greyandcosalon",
     expectedOpenDate: new Date('4/1/2019'),
     name: "Grey & Co Salon | Spa",
