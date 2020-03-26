@@ -18,6 +18,7 @@ export class App implements IViewModel {
 
   public location: Location;
   public encodeURI: (uri: string) => string;
+  public showButton: boolean;
 
   public constructor() {
     this.location = window?.location;
@@ -28,6 +29,18 @@ export class App implements IViewModel {
     if (result) {
       Object.assign(this.state, JSON.parse(localStorage.getItem('state')));
     }
+  }
+
+  onScroll = (event: Event) => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      this.showButton = true;
+    } else {
+      this.showButton = false;
+    }
+  }
+
+  beforeAttach() {
+    window.onscroll = this.onScroll;
   }
 
   afterAttach() {
