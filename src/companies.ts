@@ -29,7 +29,7 @@ export const companies: Company[] = [
     imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/58379155_267860164094883_4814993835891359744_n.png?_nc_cat=110&_nc_sid=85a577&_nc_ohc=XIDwiq2iPJkAX-I3RoK&_nc_ht=scontent-ort2-1.xx&oh=51314cde8182a516ef3000db7d0e30e5&oe=5E9E69FA",
     facebook: "redsthreadsqc",
     expectedOpenDate: null,
-    name: "Red's Threads Athleisure Boutique",
+    name: "Red's Threads",
     url: "https://www.redsthreadsqc.com/",
     phone: 5638881133,
     description: "Locally owned athleisure could use some gift card goodness!"
@@ -49,7 +49,7 @@ export const companies: Company[] = [
     giftCardUrl: "https://www.giftly.com/gift-card/central-standard-bettendorf",
     imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26230544_2015562948688378_5289718395722671421_n.jpg?_nc_cat=101&_nc_sid=85a577&_nc_ohc=Z2QdJ6oZTc0AX9Q7uTy&_nc_ht=scontent-ort2-1.xx&oh=b3e14bdc40fac391f842fc95514efaed&oe=5EA1B16C",
     facebook: "centralstandardbett",
-    name: "Central Standard - Bettendorf",
+    name: "Central Standard",
     url: "http://www.centralstandardburgers.com",
     phone: 5638885040,
     instagram: '',
@@ -119,6 +119,16 @@ export const companies: Company[] = [
     phone: 5638881982,
     description: "It’s Burrito Time Yes we are open friends. Call ahead and we will have your food ready for pick up. We will be more than happy to deliver your food to your vehicle as well",
     instagram: '',
+  },
+  {
+    type: "restaurant",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/90150165_800179413824206_5700382776818139136_o.jpg?_nc_cat=109&_nc_sid=9267fe&_nc_ohc=kg9X16QSbSMAX-T9lz4&_nc_ht=scontent-ort2-1.xx&oh=4a2217e3931ad0c55abb8f8892d86412&oe=5EA56159",
+    facebook: "smalltownpastry",
+    name: "Small Town Pastry",
+    url: "http://Smalltownpastry.com/",
+    phone: 5632328060,
+    expectedOpenDate: new Date('4/8/2020'),
+    description: "We provide high quality, freshly made pastries including cakes, macarons, cupcakes, scones and more!",
   },
 
 

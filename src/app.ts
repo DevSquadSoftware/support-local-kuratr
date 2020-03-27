@@ -1,5 +1,4 @@
 import { IViewModel } from 'aurelia';
-/* eslint-disable no-undef */
 import { Company } from './models/company';
 import { companies } from './companies';
 

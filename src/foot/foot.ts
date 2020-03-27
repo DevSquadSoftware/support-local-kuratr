@@ -1,4 +1,6 @@
-import { IViewModel } from 'aurelia';
+import { IViewModel, containerless } from 'aurelia';
+
+@containerless()
 export class Foot {
   location: Location;
   title: string;

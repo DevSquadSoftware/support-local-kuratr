@@ -7,12 +7,11 @@
 
 <require from="./navigation.html"></require>
 <require from="./header.html"></require>
-<require from="./foot"></require>
+<require from="./foot/foot"></require>
 
 <navigation></navigation>
-
-<main style="overflow:visible">
-  <div class="container" style="margin-top: 75px;">
+<main>
+  <div class="container">
     <header></header>
     <div class="row position-sticky">
       <div class="col-12">
@@ -81,15 +80,12 @@
       <div class="row">
         <div
           repeat.for="company of filteredCompanies"
-          class="col-lg-4 col-md-6 mb-5"
+          class="col-lg-4 col-6 mb-5"
         >
           <div class="animated fadeIn card card-cascade wider card-ecommerce">
             <div
-              style="
-                background: center center no-repeat url(${company.imageUrl});
-                background-size: 100% 300px;
-                height: 300px;
-              "
+              id="image"
+              style="background: center center no-repeat url(${company.imageUrl});"
               waves-effect
               class="view view-cascade overlay"
             >
@@ -109,10 +105,10 @@
                 </strong>
               </h5>
               <!-- Description -->
-              <p style="height: 50px;" class="card-text">
+              <p class="card-text">
                 ${company.description}
               </p>
-              <p class="card-text mt-2 text-center">
+              <p class="mt-2 text-center">
                 <a
                   role="button"
                   class="btn btn-outline-primary"
@@ -129,6 +125,12 @@
                   href="${company.giftCardUrl}"
                   >Gift Card</a
                 >
+                <a
+                  class="directions-link text-center font-weight-bold text-primary d-block"
+                  target="_blank"
+                  href="https://www.google.com/maps/search/${encodeURI(company.name)}"
+                  >Directions</a
+                >
               </p>
               <div class="card-footer mt-2">
                 <p
@@ -137,15 +139,6 @@
                   ${company.expectedOpenDate === undefined ? 'Open' :
                   getClosedText(company.expectedOpenDate)}
                 </p>
-                <span class="float-left mx-2">
-                  -
-                </span>
-                <a
-                  class="float-left font-weight-bold text-primary"
-                  target="_blank"
-                  href="https://www.google.com/maps/search/${encodeURI(company.name)}"
-                  >Directions</a
-                >
 
                 <div
                   class="float-right material-tooltip-main"
@@ -178,5 +171,5 @@
       </div>
     </section>
   </div>
-  <foot></foot>
 </main>
+<foot></foot>

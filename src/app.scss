@@ -1,14 +1,40 @@
-.map-container {
-  overflow: hidden;
-  position: relative;
-  height: 0;
-  iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.card.card-ecommerce > #image {
+  background-size: 100% 300px !important;
+  height: 300px;
+}
+
+@media (max-width: 576px) {
+  #header {
+    font-size: 0.75em;
   }
+
+  .card.card-ecommerce {
+    & > #image {
+      background-size: 100% 150px !important;
+      height: 150px;
+    }
+    font-size: 0.75em !important;
+
+    .card-text,
+    .card-footer,
+    .directions-link {
+      font-size: 0.75em !important;
+    }
+    .card-title {
+      font-size: 1.1em !important;
+    }
+
+    & > .card-body {
+      .card-text {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.card-body > .card-text {
+  height: 50px;
+  overflow: auto;
 }
 
 #scroll-top-button {
@@ -18,6 +44,13 @@
   z-index: 50;
 }
 
+nav.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
 .btn.btn-xs {
   padding: 5px;
   font-size: 0.8em;
@@ -25,7 +58,7 @@
 
 .position-sticky {
   background-color: white;
-  top: 50px;
+  top: 0px;
   z-index: 9;
   box-shadow: 5px 10px 10px white;
   padding-bottom: 10px;
@@ -63,19 +96,19 @@
 }
 
 html {
-  height: 100vh;
+  min-height: 100%;
 }
 body,
 main {
   min-height: 100vh;
-}
-main {
-  overflow: auto;
+  >.container{
+    padding-top: 5.5em;
+  }
 }
 
 .page-footer {
   position: relative;
-  margin-top: -135px;
+  margin-top: -137px;
   clear: both;
 }
 
