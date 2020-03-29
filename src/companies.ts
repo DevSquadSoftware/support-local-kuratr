@@ -130,6 +130,25 @@ export const companies: Company[] = [
     expectedOpenDate: new Date('4/8/2020'),
     description: "We provide high quality, freshly made pastries including cakes, macarons, cupcakes, scones and more!",
   },
-
+  {
+    type: "restaurant",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/90150165_800179413824206_5700382776818139136_o.jpg?_nc_cat=109&_nc_sid=9267fe&_nc_ohc=kg9X16QSbSMAX-T9lz4&_nc_ht=scontent-ort2-1.xx&oh=4a2217e3931ad0c55abb8f8892d86412&oe=5EA56159",
+    facebook: "smalltownpastry",
+    name: "Small Town Pastry",
+    url: "http://Smalltownpastry.com/",
+    phone: 5632328060,
+    description: "We provide high quality, freshly made pastries including cakes, macarons, cupcakes, scones and more!",
+  },
+  {
+    type: "restaurant",
+    giftCardUrl: "https://peacefulstyleboutique.com/accessories-gifts/",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/32369697_197457307559806_8014063878008733696_o.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=C3U4pjWH370AX8TnpIj&_nc_ht=scontent-ort2-1.xx&oh=36505466ff5722ef78f785c1a75274ba&oe=5EA84B2B",
+    facebook: "peacefulstyleboutique",
+    name: "Peaceful Style Boutique",
+    url: "http://www.peacefulstyleboutique.com/",
+    expectedOpenDate: new Date('4/8/2020'),
+    phone: 5633329563,
+    description: "A fashion forward, trendy & unique boutique offering women's clothing, shoes, handbags, jewelry and gifts"
+  },
 
 ];

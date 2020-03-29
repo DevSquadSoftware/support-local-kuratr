@@ -15,6 +15,17 @@
     }
     font-size: 0.75em !important;
 
+    .btn {
+      &, > * {
+        font-size: 0.85em !important;
+      }
+      padding: 3.5px;
+    }
+    .btn[class*="btn-outline-"] {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
     .card-text,
     .card-footer,
     .directions-link {
@@ -101,7 +112,7 @@ html {
 body,
 main {
   min-height: 100vh;
-  >.container{
+  > .container {
     padding-top: 5.5em;
   }
 }
