@@ -132,13 +132,12 @@ export const companies: Company[] = [
   },
 
   {
-    type: "restaurant",
+    type: "retail",
     giftCardUrl: "https://peacefulstyleboutique.com/accessories-gifts/",
     imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/32369697_197457307559806_8014063878008733696_o.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=C3U4pjWH370AX8TnpIj&_nc_ht=scontent-ort2-1.xx&oh=36505466ff5722ef78f785c1a75274ba&oe=5EA84B2B",
     facebook: "peacefulstyleboutique",
     name: "Peaceful Style Boutique",
     url: "http://www.peacefulstyleboutique.com/",
-    expectedOpenDate: new Date('4/8/2020'),
     phone: 5633329563,
     description: "A fashion forward, trendy & unique boutique offering women's clothing, shoes, handbags, jewelry and gifts"
   },
