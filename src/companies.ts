@@ -151,5 +151,16 @@ export const companies: Company[] = [
     instagram: '',
     description: "We serve fresh BBQ made daily. We can run out of food from time to time. Cajun food served on Saturday’s also. All meat and sides are made fresh daily. We do not use left overs.",
   },
+  {
+    type: "restaurant",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/1503510_866322130076249_5954397437461438238_n.jpg?_nc_cat=102&_nc_sid=174925&_nc_ohc=3YVXngDj_twAX_1ONXP&_nc_ht=scontent-ort2-1.xx&oh=49ead1a027e5db693d8c8baac3299f7b&oe=5EA759B2",
+    facebook: "mickeyscountrycafe",
+    name: "Mickey's Country Cafe",
+    url: "https://www.facebook.com/mickeyscountrycafe",
+    phone: 5633595634,
+    instagram: '',
+    description: "We serve fresh BBQ made daily. We can run out of food from time to time. Cajun food served on Saturday’s also. All meat and sides are made fresh daily. We do not use left overs.",
+  },
+
 
 ];
