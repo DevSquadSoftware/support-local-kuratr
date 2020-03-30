@@ -1,6 +1,12 @@
-.card.card-ecommerce > #image {
-  background-size: 100% 300px !important;
-  height: 300px;
+.card.card-ecommerce {
+  > #image {
+    background-size: 100% 300px !important;
+    height: 300px;
+  }
+
+  .btn {
+    font-size: .7em !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -17,7 +23,8 @@
 
     .btn {
       min-width: 30%;
-      &, > * {
+      &,
+      > * {
         font-size: 0.85em !important;
       }
       padding: 3.5px;
