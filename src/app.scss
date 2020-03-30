@@ -16,6 +16,7 @@
     font-size: 0.75em !important;
 
     .btn {
+      width: 40%;
       &, > * {
         font-size: 0.85em !important;
       }
@@ -44,7 +45,7 @@
 }
 
 .card-body > .card-text {
-  height: 50px;
+  height: 75px;
   overflow: auto;
 }
 

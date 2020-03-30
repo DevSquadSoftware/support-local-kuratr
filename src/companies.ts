@@ -130,15 +130,7 @@ export const companies: Company[] = [
     expectedOpenDate: new Date('4/8/2020'),
     description: "We provide high quality, freshly made pastries including cakes, macarons, cupcakes, scones and more!",
   },
-  {
-    type: "restaurant",
-    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/90150165_800179413824206_5700382776818139136_o.jpg?_nc_cat=109&_nc_sid=9267fe&_nc_ohc=kg9X16QSbSMAX-T9lz4&_nc_ht=scontent-ort2-1.xx&oh=4a2217e3931ad0c55abb8f8892d86412&oe=5EA56159",
-    facebook: "smalltownpastry",
-    name: "Small Town Pastry",
-    url: "http://Smalltownpastry.com/",
-    phone: 5632328060,
-    description: "We provide high quality, freshly made pastries including cakes, macarons, cupcakes, scones and more!",
-  },
+
   {
     type: "restaurant",
     giftCardUrl: "https://peacefulstyleboutique.com/accessories-gifts/",
@@ -149,6 +141,16 @@ export const companies: Company[] = [
     expectedOpenDate: new Date('4/8/2020'),
     phone: 5633329563,
     description: "A fashion forward, trendy & unique boutique offering women's clothing, shoes, handbags, jewelry and gifts"
+  },
+  {
+    type: "restaurant",
+    imageUrl: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/43104943_1870748893038265_5248349945794134016_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=-qof-noEK50AX94eSXv&_nc_ht=scontent-ort2-1.xx&oh=c28dde33396775d533eb6982f803b22c&oe=5EA6F431",
+    facebook: "What-Bbq-Bar-1870748226371665",
+    name: "What Bbq & Bar",
+    url: "http://www.whatbbqbar.com/",
+    phone: 5637291136,
+    instagram: '',
+    description: "We serve fresh BBQ made daily. We can run out of food from time to time. Cajun food served on Saturday’s also. All meat and sides are made fresh daily. We do not use left overs.",
   },
 
 ];
