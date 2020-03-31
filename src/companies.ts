@@ -8,7 +8,7 @@ export const companies: Company[] = [
     facebook: "greyandcosalon",
     expectedOpenDate: new Date('4/1/2019'),
     name: "Grey & Co Salon | Spa",
-    phone: 5633922020,
+    phone: 5633962020,
     url: "https://greyandcosalon.com",
     description: "Please support your local salon and book an appointment or buy a gift card."
   },
